@@ -81,7 +81,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ contactForm, consistentLayout
   return (
     <section
       id="contact"
-      className={`${consistentLayout.section} p font-dm-sans text-white`}
+      className={`${consistentLayout.section} p text-white`}
       aria-label="Contact Section"
     >
       <div className="grid grid-cols-2 max-md:grid-cols-1 max-md:space-y-8 xl:gap-12 lg:gap-8 md:gap-6 gap-4">
@@ -128,7 +128,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ contactForm, consistentLayout
 
         {/* RIGHT: Form */}
         <div className="p-8 bg-secondary rounded-xl space-y-4 flex flex-col justify-around max-md:p-6 ml-auto xl:p-10">
-          <h4 className="h5 font-questrial mb-4">{formSubheading}</h4>
+          <h4 className="h5 mb-4">{formSubheading}</h4>
           <form
             onSubmit={onSubmit}
             className="space-y-4 text-base"

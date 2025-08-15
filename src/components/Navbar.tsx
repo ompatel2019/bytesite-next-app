@@ -30,7 +30,7 @@ const Navbar: React.FC<NavbarProps> = ({ hoverBg, navBarLinks }) => {
   return (
     <>
       <nav
-        className="bg-primary flex items-center responsivePad pt-[24px] pb-[16px] justify-between font-questrial sticky z-50 top-0"
+        className="bg-primary flex items-center responsivePad pt-[24px] pb-[16px] justify-between sticky z-50 top-0"
         aria-label="Main Navigation"
       >
         {/* Home Link */}
@@ -111,11 +111,11 @@ const Navbar: React.FC<NavbarProps> = ({ hoverBg, navBarLinks }) => {
         unmountOnExit
       >
         <div
-          className="bg-primary fixed inset-0 flex flex-col items-end justify-center z-40 h4 font-questrial responsivePad"
+          className="bg-primary fixed inset-0 flex flex-col items-end justify-center z-40 h4 responsivePad"
           id="mobile-menu"
           aria-modal="true"
         >
-          <ul className="flex flex-col text-white space-y-10 h1 font-dm-sanstext-[16px] text-right">
+          <ul className="flex flex-col text-white space-y-10 h1 text-[16px] text-right">
             {navBarLinks.map((link, index) => (
               <li
                 key={index}

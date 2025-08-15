@@ -2,7 +2,7 @@ import BlogsPage from '../../components/pages/BlogsPage'
 import { Metadata } from 'next'
 
 const consistentLayout = {
-  section: 'responsivePad bg-primary text-white font-dm-sans space-y-8 max-md:space-y-2 xl:py-[72px] lg:py-[48px] md:py-[40px] py-[32px]',
+  section: 'responsivePad bg-primary text-white space-y-8 max-md:space-y-2 xl:py-[72px] lg:py-[48px] md:py-[40px] py-[32px]',
   sectionClass: 'h6 font-semibold',
   sectionSubheadingClass: 'h4 font-semibold',
 }

@@ -65,7 +65,7 @@ const Service: React.FC<ServiceProps> = ({ serviceInfo }) => {
       </div>
 
       <div className="space-y-4">
-        <h3 className="h5 text-center font-bold m1 font-dm-mono">
+        <h3 className="h5 text-center font-bold m1">
           {serviceInfo.serviceName.toUpperCase()}
         </h3>
         <p className="p text-center">{serviceInfo.serviceDesc}</p>
@@ -74,7 +74,7 @@ const Service: React.FC<ServiceProps> = ({ serviceInfo }) => {
           {serviceInfo.serviceTools.map((tool, idx) => (
             <div
               key={idx}
-              className="bg-white w-full text-primary text-center rounded-sm font-normal text-base px-2 py-[4px] font-questrial"
+              className="bg-white w-full text-primary text-center rounded-sm font-normal text-base px-2 py-[4px]"
             >
               <p>{tool}</p>
             </div>

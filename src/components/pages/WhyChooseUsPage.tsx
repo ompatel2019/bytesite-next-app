@@ -43,7 +43,7 @@ const WhyChooseUsPage: React.FC<WhyChooseUsPageProps> = ({ section, sectionName,
       <WhyChooseUs
         whyChooseUS="Why Choose Us"
         consistentLayout={{
-          section: 'bg-primary text-white font-dm-sans space-y-8 py-16 responsivePad',
+          section: 'bg-primary text-white space-y-8 py-16 responsivePad',
           sectionClass: 'h6 font-semibold',
           sectionSubheadingClass: 'h4 font-semibold'
         }}

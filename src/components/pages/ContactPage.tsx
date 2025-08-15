@@ -35,7 +35,7 @@ const ContactPage: React.FC = () => {
       <ContactForm
         contactForm="Get in Touch"
         consistentLayout={{
-          section: 'bg-primary text-white font-dm-sans space-y-8 py-16 responsivePad',
+          section: 'bg-primary text-white space-y-8 py-16 responsivePad',
           sectionClass: 'h6 font-semibold',
           sectionSubheadingClass: 'h4 font-semibold'
         }}
@@ -44,7 +44,7 @@ const ContactPage: React.FC = () => {
       <Faqs
         faqsSec="FAQs"
         consistentLayout={{
-          section: 'bg-primary text-white font-dm-sans space-y-8 py-16 responsivePad',
+          section: 'bg-primary text-white space-y-8 py-16 responsivePad',
           sectionClass: 'h6 font-semibold',
           sectionSubheadingClass: 'h4 font-semibold'
         }}

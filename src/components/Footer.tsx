@@ -70,7 +70,7 @@ const Footer: React.FC<FooterProps> = ({ consistentLayout }) => {
   return (
     <section
       id="footer"
-      className={`responsivePad bg-primary text-white font-dm-sans space-y-4 py-4 md:pt-24 pt-12`}
+      className={`responsivePad bg-primary text-white space-y-4 py-4 md:pt-24 pt-12`}
       aria-label="Footer"
     >
       <div className="md:space-y-8 border-b-2 md:pb-10 pb-4">
@@ -159,7 +159,7 @@ const Footer: React.FC<FooterProps> = ({ consistentLayout }) => {
         </h2>
       </div>
 
-      <div className="p font-questrial text-center">
+      <div className="p text-center">
         © {new Date().getFullYear()} Bytesites Digital. All rights reserved.
       </div>
     </section>

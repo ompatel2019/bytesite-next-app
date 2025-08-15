@@ -46,7 +46,7 @@ const AboutUs: React.FC<AboutUsProps> = ({ consistentLayout, aboutUs }) => {
       id="aboutUs" 
       className={consistentLayout.section}
       >
-      <div className="font-dm-sans grid grid-cols-2 max-md:flex max-md:flex-col gap-4 xl:px-[120px] lg:px-[64px]">
+      <div className="grid grid-cols-2 max-md:flex max-md:flex-col gap-4 xl:px-[120px] lg:px-[64px]">
         
         {/* LEFT COLUMN */}
         <div className="p-6 bg-secondary flex flex-col justify-between rounded-2xl text-white max-md:space-y-8">

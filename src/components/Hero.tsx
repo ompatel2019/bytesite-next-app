@@ -77,7 +77,7 @@ const Hero: React.FC<HeroProps> = ({ hoverBg, screenWidth }) => {
   return (
     <section
       id="home"
-      className={`responsivePad bg-primary text-white font-dm-sans space-y-8 lg:py-[32px] md:py-[24px] py-[16px]`}
+      className={`responsivePad bg-primary text-white space-y-8 lg:py-[32px] md:py-[24px] py-[16px]`}
     >
       <div className="grid grid-cols-3 max-lg:flex max-lg:flex-col gap-16 xl:gap-24">
         {/* LEFT SIDE */}

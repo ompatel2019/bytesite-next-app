@@ -76,7 +76,7 @@ const Pricing: React.FC<PricingProps> = ({ pricing, consistentLayout }) => {
         <p className={consistentLayout.sectionClass}>
           {pricing.toUpperCase()}
         </p>
-        <h2 className="h4 font-semibold leading-8">
+        <h2 className="h4 font-bold">
           {subheading}
         </h2>
       </div>
@@ -102,11 +102,11 @@ const Pricing: React.FC<PricingProps> = ({ pricing, consistentLayout }) => {
             `}
           >
             <div className="border-b-2 pb-4 space-y-2 max-md:space-y-1">
-              <h2 className="font-dm-mono h4 font-bold">
+              <h2 className="h4 font-bold">
                 {pricingTab.pricingName}
               </h2>
 
-              <div className="font-dm-mono h5 flex space-x-2">
+              <div className="h5 flex space-x-2">
                 {pricingTab.pricingStrikeThrough && (
                   <h3 className="text-gray-300 line-through">
                     {pricingTab.pricingStrikeThrough}
@@ -133,7 +133,7 @@ const Pricing: React.FC<PricingProps> = ({ pricing, consistentLayout }) => {
             
             <div>
               <Link href="#contact">
-                <div className="text-center p bg-white rounded-md p-3 max-md:p-2 text-secondary font-dm-mono">
+                <div className="text-center p bg-white rounded-md p-3 max-md:p-2 text-secondary">
                   Get Started
                 </div>
               </Link>

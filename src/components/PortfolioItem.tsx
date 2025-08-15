@@ -27,7 +27,7 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({ portfolioItem }) => {
         p-8 gap-7
         text-white
         duration-200
-        font-dm-sans
+        font-semibold
         transition-all
         hover:p-10
       "
@@ -39,7 +39,7 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({ portfolioItem }) => {
             <h3 className="h5 font-bold">
               {portfolioItem.portfolioItemName}
             </h3>
-            <p className="p font-questrial text-white">
+            <p className="p text-white">
               {portfolioItem.portfolioItemDesc}
             </p>
           </div>
@@ -61,7 +61,7 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({ portfolioItem }) => {
               md:text-secondary
               text-white
               max-md:underline
-              font-dm-mono
+              font-mono
               turnParent
               space-x-1
               md:duration-200
