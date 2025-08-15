@@ -7,7 +7,6 @@ import WhyChooseUs from "../components/WhyChooseUs";
 import Portfolio from "../components/Portfolio";
 import Pricing from "../components/Pricing";
 import ContactForm from "../components/ContactForm";
-import Blogs from "../components/Blogs";
 import Faqs from "../components/Faqs";
 import { Metadata } from "next";
 
@@ -68,7 +67,6 @@ export default function Home() {
         contactForm="Contact Form"
         consistentLayout={consistentLayout}
       />
-      <Blogs blogsSec="Blogs" consistentLayout={consistentLayout} />
       <Faqs faqsSec="FAQs" consistentLayout={consistentLayout} />
     </>
   );

@@ -8,12 +8,17 @@ const navBarLinks = [
   { name: 'Why Choose Us', to: '/whychooseus' },
   { name: 'Pricing', to: '/pricing' },
   { name: 'Portfolio', to: '/portfolio' },
-  { name: 'Blogs', to: '/blogs' },
 ];
+
+interface ConsistentLayout {
+  section: string;
+  sectionClass: string;
+  sectionSubheadingClass: string;
+}
 
 interface MainLayoutProps {
   children: React.ReactNode;
-  consistentLayout?: any;
+  consistentLayout?: ConsistentLayout;
   hoverBg?: string;
 }
 
