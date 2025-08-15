@@ -32,8 +32,8 @@ const BlogsPage: React.FC<BlogsPageProps> = ({ consistentLayout }) => {
         pageRoute="Home / Blogs"
         dividerBackground="bg-black"
         dividerFill="#111111"
-        backgroundColour="bg-c4-0"
-        textColour="text-c1-0"
+        backgroundColour="bg-white"
+        textColour="text-primary"
       />
 
       <SeoHelmet

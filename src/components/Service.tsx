@@ -28,13 +28,13 @@ const Service: React.FC<ServiceProps> = ({ serviceInfo }) => {
     <div
       className="
         service
-        border-2 border-c4-0
+        border-2 border-white
         px-8 py-8
         flex flex-col items-center
         rounded-md space-y-6 lg:space-y-7 lg:justify-around
         
         transition-all duration-300 ease-in-out
-        hover:-translate-y-[10px] hover:invert hover:bg-c1-0
+        hover:-translate-y-[10px] hover:invert hover:bg-primary
       "
     >
       <div className="flex space-x-2">
@@ -53,7 +53,7 @@ const Service: React.FC<ServiceProps> = ({ serviceInfo }) => {
         </div>
 
         {serviceInfo.serviceDuration && (
-          <div className={`${topContainersClass} bg-c4-0 text-c1-0`}>
+          <div className={`${topContainersClass} bg-white text-primary`}>
             <IoHourglassOutline className="rotate" aria-hidden="true" />
             <p>{serviceInfo.serviceDuration}</p>
           </div>
@@ -74,7 +74,7 @@ const Service: React.FC<ServiceProps> = ({ serviceInfo }) => {
           {serviceInfo.serviceTools.map((tool, idx) => (
             <div
               key={idx}
-              className="bg-c4-0 w-full text-c1-0 text-center rounded-sm font-normal text-base px-2 py-[4px] font-questrial"
+              className="bg-white w-full text-primary text-center rounded-sm font-normal text-base px-2 py-[4px] font-questrial"
             >
               <p>{tool}</p>
             </div>

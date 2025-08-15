@@ -67,7 +67,7 @@ const WhyChooseUs: React.FC<WhyChooseUsProps> = ({ consistentLayout, whyChooseUS
       id="whyChooseUs"
       className={consistentLayout.section}
     >
-      <div className="text-c4-0 space-y-10">
+      <div className="text-white space-y-10">
         <div className="">
           <p className={consistentLayout.sectionClass}>
             {whyChooseUS.toUpperCase()}

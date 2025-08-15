@@ -1,27 +1,21 @@
-import React from 'react'
-import Link from 'next/link';
-import { GoArrowUpRight } from "react-icons/go";
+import React from 'react';
 
-const CTA: React.FC = () => {
+const CTA = () => {
   return (
-    <>
-        <div className='responsivePad bg-c1-0 py-16 space-y-8'>
-
-            <h2 className='text-c4-0 font-dm-sans h4 font-semibold'>
-                Seen enough? Get in touch now to claim a <span className="italic">free</span> website blueprint for your business! 
+    <div className='responsivePad bg-primary py-16 space-y-8'>
+        <div className='text-center space-y-4'>
+            <h2 className='text-white font-dm-sans h4 font-semibold'>
+                Ready to get started?
             </h2>
-
-            <div className='flex space-x-1 items-center p-2 bg-c4-0 font-dm-sans h7 rounded-md text-c1-0 hover:px-8 transition-all w-fit px-4 turnParent'>
-                <Link href='/contact' className=''>
-                    Get Started
-                </Link>
-
-                <GoArrowUpRight className='turn transition-all'/>
+            <div className='flex space-x-1 items-center p-2 bg-white font-dm-sans h7 rounded-md text-primary hover:px-8 transition-all w-fit px-4 turnParent'>
+                <span>Get Started</span>
+                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
             </div>
-
         </div>
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default CTA
+export default CTA;

@@ -49,7 +49,7 @@ const AboutUs: React.FC<AboutUsProps> = ({ consistentLayout, aboutUs }) => {
       <div className="font-dm-sans grid grid-cols-2 max-md:flex max-md:flex-col gap-4 xl:px-[120px] lg:px-[64px]">
         
         {/* LEFT COLUMN */}
-        <div className="p-6 bg-c2-0 flex flex-col justify-between rounded-2xl text-c4-0 max-md:space-y-8">
+        <div className="p-6 bg-secondary flex flex-col justify-between rounded-2xl text-white max-md:space-y-8">
           <div className="space-y-4 xl:space-y-8">
             <p className={consistentLayout.sectionClass}>
               {aboutUs.toUpperCase()}
@@ -78,13 +78,13 @@ const AboutUs: React.FC<AboutUsProps> = ({ consistentLayout, aboutUs }) => {
 
           {/* Stats */}
           <div
-            className="grid grid-cols-2 xl:grid-cols-4 p-6 bg-c2-0 rounded-2xl gap-2"
+            className="grid grid-cols-2 xl:grid-cols-4 p-6 bg-secondary rounded-2xl gap-2"
             aria-label="Business Performance Statistics"
           >
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className="rounded-lg text-c4-0 border-2 p-4 border-gray-400"
+                className="rounded-lg text-white border-2 p-4 border-gray-400"
               >
                 <h3 className="h6 font-bold">
                   {stat.stateNumber}

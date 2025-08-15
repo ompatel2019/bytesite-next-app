@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { MdArrowOutward } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
@@ -81,7 +81,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ contactForm, consistentLayout
   return (
     <section
       id="contact"
-      className={`${consistentLayout.section} p font-dm-sans text-c4-0`}
+      className={`${consistentLayout.section} p font-dm-sans text-white`}
       aria-label="Contact Section"
     >
       <div className="grid grid-cols-2 max-md:grid-cols-1 max-md:space-y-8 xl:gap-12 lg:gap-8 md:gap-6 gap-4">
@@ -127,7 +127,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ contactForm, consistentLayout
         </div>
 
         {/* RIGHT: Form */}
-        <div className="p-8 bg-c2-0 rounded-xl space-y-4 flex flex-col justify-around max-md:p-6 ml-auto xl:p-10">
+        <div className="p-8 bg-secondary rounded-xl space-y-4 flex flex-col justify-around max-md:p-6 ml-auto xl:p-10">
           <h4 className="h5 font-questrial mb-4">{formSubheading}</h4>
           <form
             onSubmit={onSubmit}
@@ -146,7 +146,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ contactForm, consistentLayout
                   name="name"
                   type="text"
                   placeholder="John Doe"
-                  className="w-full bg-transparent border-c4-0 border-2 rounded-md py-2 px-4 transition-all hover:pl-8"
+                  className="w-full bg-transparent border-white border-2 rounded-md py-2 px-4 transition-all hover:pl-8"
                   required
                   autoComplete="name"
                 />
@@ -161,7 +161,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ contactForm, consistentLayout
                   name="email"
                   type="email"
                   placeholder="johndoe@gmail.com"
-                  className="w-full bg-transparent border-c4-0 border-2 rounded-md py-2 px-4 transition-all hover:pl-8"
+                  className="w-full bg-transparent border-white border-2 rounded-md py-2 px-4 transition-all hover:pl-8"
                   required
                   autoComplete="email"
                 />
@@ -178,7 +178,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ contactForm, consistentLayout
                 name="phone"
                 type="tel"
                 placeholder="123456789"
-                className="w-full bg-transparent border-c4-0 border-2 rounded-md px-4 py-2 transition-all hover:pl-8"
+                className="w-full bg-transparent border-white border-2 rounded-md px-4 py-2 transition-all hover:pl-8"
                 autoComplete="tel"
               />
             </div>
@@ -196,11 +196,11 @@ const ContactForm: React.FC<ContactFormProps> = ({ contactForm, consistentLayout
                   bg-transparent
                   rounded-md
                   border-2
-                  border-c4-0
+                  border-white
                   py-2
                   px-4
                   w-full
-                  text-c4-0
+                  text-white
                   text-base
                   transition-all
                   hover:pl-8
@@ -219,16 +219,16 @@ const ContactForm: React.FC<ContactFormProps> = ({ contactForm, consistentLayout
                 flex
                 p-2
                 rounded-lg
-                bg-c1-0
+                bg-primary
                 px-8
-                border-c4-0
+                border-white
                 border-2
                 w-fit
                 items-center
                 space-x-1
                 text-base
                 transition-all
-                hover:bg-c3-0
+                hover:bg-gray-600
                 hover:px-12
               "
             >

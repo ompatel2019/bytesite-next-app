@@ -1,47 +1,40 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary: #2a2a2a;
+  --background: #2a2a2a;
+  --foreground: #fafafa;
+  --container: #3a3a3a;
 }
 
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-container: var(--container);
   --font-sans: var(--font-dm-sans);
   --font-mono: var(--font-geist-mono);
   
   /* Custom colors - these will generate bg-c1-0, text-c1-0, etc. */
-  --color-c1-0: #ffffff;
-  --color-c1-50: #f8fafc;
-  --color-c1-100: #f1f5f9;
-  --color-c1-200: #e2e8f0;
-  --color-c1-300: #cbd5e1;
-  --color-c1-400: #94a3b8;
-  --color-c1-500: #64748b;
-  --color-c1-600: #475569;
-  --color-c1-700: #334155;
-  --color-c1-800: #1e293b;
-  --color-c1-900: #0f172a;
+  --color-c1-0: #fafafa;
+  --color-c1-50: #f5f5f5;
+  --color-c1-100: #e5e5e5;
+  --color-c1-200: #d4d4d4;
+  --color-c1-300: #a3a3a3;
+  --color-c1-400: #737373;
+  --color-c1-500: #525252;
+  --color-c1-600: #404040;
+  --color-c1-700: #3a3a3a;
+  --color-c1-800: #262626;
+  --color-c1-900: #2a2a2a;
   
-  --color-c2: #f1f5f9;
-  --color-c3: #e2e8f0;
-  --color-c4-0: #0f172a;
+  --color-c2: #3a3a3a;
+  --color-c3: #606060;
+  --color-c4: #fafafa;
   
   /* Custom font families */
   --font-dm-sans: var(--font-dm-sans);
   --font-questrial: 'Questrial', sans-serif;
   --font-dm-mono: 'DM Mono', monospace;
-  
-  /* Custom spacing */
-  --spacing-responsivePad: clamp(1rem, 5vw, 4rem);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 html {
@@ -50,138 +43,94 @@ html {
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background-color: var(--black) !important;
+  color: var(--white);
   font-family: var(--font-dm-sans), Arial, Helvetica, sans-serif;
 }
 
-/* Typography classes */
+/* Colours */
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.bg-black {
+  background-color: var(--black);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.text-black {
+  color: var(--black);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.border-primary {
+  border-color: var(--primary);
+}
+
+.border-secondary {
+  border-color: var(--secondary);
+}
+
+.border-black {
+  border-color: var(--black);
+}
+
+.border-white {
+  border-color: var(--white);
+}
+
+/* Responsive padding utility class */
+.responsivePad {
+  @apply 2xl:px-[200px] xl:px-[120px] lg:px-[96px] sm:px-[64px] min-[480px]:px-[32px] max-sm:px-[16px];
+}
+
+/* Typography classes using Tailwind */
 .h1 {
-  font-size: 2.25rem;
-  line-height: 1.2;
-}
-
-@media (min-width: 768px) {
-  .h1 {
-    font-size: 3.75rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .h1 {
-    font-size: 6rem;
-  }
+  @apply text-4xl md:text-6xl xl:text-8xl;
 }
 
 .h2 {
-  font-size: 1.875rem;
-  line-height: 1.2;
-}
-
-@media (min-width: 768px) {
-  .h2 {
-    font-size: 3rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .h2 {
-    font-size: 4.5rem;
-  }
+  @apply text-3xl md:text-5xl xl:text-7xl;
 }
 
 .h3 {
-  font-size: 1.5rem;
-  line-height: 1.2;
-}
-
-@media (min-width: 768px) {
-  .h3 {
-    font-size: 2.25rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .h3 {
-    font-size: 3.75rem;
-  }
+  @apply text-2xl md:text-4xl xl:text-6xl;
 }
 
 .h4 {
-  font-size: 1.25rem;
-  line-height: 1.2;
-}
-
-@media (min-width: 768px) {
-  .h4 {
-    font-size: 1.875rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .h4 {
-    font-size: 3rem;
-  }
+  @apply text-xl md:text-3xl xl:text-5xl;
 }
 
 .h5 {
-  font-size: 1.125rem;
-  line-height: 1.2;
-}
-
-@media (min-width: 768px) {
-  .h5 {
-    font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .h5 {
-    font-size: 2.25rem;
-  }
+  @apply text-lg md:text-2xl xl:text-4xl;
 }
 
 .h6 {
-  font-size: 1rem;
-  line-height: 1.2;
-}
-
-@media (min-width: 768px) {
-  .h6 {
-    font-size: 1.25rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .h6 {
-    font-size: 1.875rem;
-  }
+  @apply text-base md:text-xl xl:text-3xl;
 }
 
 .h7 {
-  font-size: 1rem;
-  line-height: 1.2;
-}
-
-@media (min-width: 768px) {
-  .h7 {
-    font-size: 1.125rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .h7 {
-    font-size: 1.25rem;
-  }
+  @apply text-base md:text-lg xl:text-xl;
 }
 
 .p {
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-@media (min-width: 1280px) {
-  .p {
-    font-size: 1.125rem;
-  }
+  @apply text-base xl:text-lg;
 }

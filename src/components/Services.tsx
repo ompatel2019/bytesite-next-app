@@ -104,7 +104,7 @@ const Services: React.FC<ServicesProps> = ({ consistentLayout, servicesSection, 
       id="services"
       className={consistentLayout.section}
     >
-      <div className="text-c4-0 space-y-10">
+      <div className="text-white space-y-10">
         <div className="">
           <p className={consistentLayout.sectionClass}>
             {servicesSection.toUpperCase()}

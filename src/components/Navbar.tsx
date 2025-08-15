@@ -30,7 +30,7 @@ const Navbar: React.FC<NavbarProps> = ({ hoverBg, navBarLinks }) => {
   return (
     <>
       <nav
-        className="bg-c1-0 flex items-center responsivePad pt-[24px] pb-[16px] justify-between font-questrial sticky z-50 top-0"
+        className="bg-primary flex items-center responsivePad pt-[24px] pb-[16px] justify-between font-questrial sticky z-50 top-0"
         aria-label="Main Navigation"
       >
         {/* Home Link */}
@@ -42,7 +42,7 @@ const Navbar: React.FC<NavbarProps> = ({ hoverBg, navBarLinks }) => {
 
         {/* DESKTOP NAV */}
         <div className="max-[960px]:hidden flex space-x-4 h5 fade-right fade-in">
-          <ul className="bg-c2-0 flex text-c4-0 rounded-full items-center space-x-6 px-8 p">
+          <ul className="bg-secondary flex text-white rounded-full items-center space-x-6 px-8 p">
             {navBarLinks.map((link, index) => (
               <li
                 key={index}
@@ -68,14 +68,14 @@ const Navbar: React.FC<NavbarProps> = ({ hoverBg, navBarLinks }) => {
             <button
               className={`
                 ${hoverBg}
-                p bg-c4-0
+                p bg-white
                 rounded-full
                 flex items-center
                 p-3 px-8
                 justify-center
                 btn
-                hover:bg-c1-0
-                hover:text-c4-0
+                hover:bg-primary
+                hover:text-white
                 transition-all
                 hover:px-12
                 duration-300
@@ -111,11 +111,11 @@ const Navbar: React.FC<NavbarProps> = ({ hoverBg, navBarLinks }) => {
         unmountOnExit
       >
         <div
-          className="bg-c1-0 fixed inset-0 flex flex-col items-end justify-center z-40 h4 font-questrial responsivePad"
+          className="bg-primary fixed inset-0 flex flex-col items-end justify-center z-40 h4 font-questrial responsivePad"
           id="mobile-menu"
           aria-modal="true"
         >
-          <ul className="flex flex-col text-c4-0 space-y-10 h1 font-dm-sanstext-[16px] text-right">
+          <ul className="flex flex-col text-white space-y-10 h1 font-dm-sanstext-[16px] text-right">
             {navBarLinks.map((link, index) => (
               <li
                 key={index}

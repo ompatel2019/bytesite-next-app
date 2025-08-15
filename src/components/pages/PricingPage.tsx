@@ -28,14 +28,14 @@ const PricingPage: React.FC = () => {
         pageRoute="Home / Pricing"
         dividerBackground="bg-black"
         dividerFill="#111111"
-        backgroundColour="bg-c4-0"
-        textColour="text-c1-0"
+        backgroundColour="bg-white"
+        textColour="text-primary"
       />
 
       <Pricing
         pricing="Our Pricing"
         consistentLayout={{
-          section: 'bg-c1-0 text-c4-0 font-dm-sans space-y-8 py-16 responsivePad',
+          section: 'bg-primary text-white font-dm-sans space-y-8 py-16 responsivePad',
           sectionClass: 'h6 font-semibold',
           sectionSubheadingClass: 'h4 font-semibold'
         }}
@@ -46,7 +46,7 @@ const PricingPage: React.FC = () => {
       <Faqs
         faqsSec="FAQs"
         consistentLayout={{
-          section: 'bg-c1-0 text-c4-0 font-dm-sans space-y-8 py-16 responsivePad',
+          section: 'bg-primary text-white font-dm-sans space-y-8 py-16 responsivePad',
           sectionClass: 'h6 font-semibold',
           sectionSubheadingClass: 'h4 font-semibold'
         }}

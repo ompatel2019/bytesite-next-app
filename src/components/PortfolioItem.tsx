@@ -20,12 +20,12 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({ portfolioItem }) => {
   return (
     <div
       className="
-        bg-c2-0
+        bg-secondary
         rounded-lg
         grid grid-cols-2
         max-md:grid-cols-1
         p-8 gap-7
-        text-c4-0
+        text-white
         duration-200
         font-dm-sans
         transition-all
@@ -39,7 +39,7 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({ portfolioItem }) => {
             <h3 className="h5 font-bold">
               {portfolioItem.portfolioItemName}
             </h3>
-            <p className="p font-questrial text-c4-0">
+            <p className="p font-questrial text-white">
               {portfolioItem.portfolioItemDesc}
             </p>
           </div>
@@ -54,12 +54,12 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({ portfolioItem }) => {
               justify-center
               text-base
               md:p-2 md:px-5
-              md:bg-c4-0
+              md:bg-white
               md:transition-all
               md:hover:px-6
               md:rounded-lg
-              md:text-c2-0
-              text-c4-0
+              md:text-secondary
+              text-white
               max-md:underline
               font-dm-mono
               turnParent

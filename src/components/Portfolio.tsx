@@ -68,7 +68,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ portfolio, consistentLayout }) =>
       id="portfolio"
       className={consistentLayout.section}
     >
-      <div className="text-c4-0 text-center">
+      <div className="text-white text-center">
         <p className={consistentLayout.sectionClass}>
           {portfolio.toUpperCase()}
         </p>

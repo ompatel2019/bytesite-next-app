@@ -72,7 +72,7 @@ const Pricing: React.FC<PricingProps> = ({ pricing, consistentLayout }) => {
       id="pricing"
       className={consistentLayout.section}
     >
-      <div className="fade-in fade-down text-c4-0 text-left">
+      <div className="fade-in fade-down text-white text-left">
         <p className={consistentLayout.sectionClass}>
           {pricing.toUpperCase()}
         </p>
@@ -81,24 +81,24 @@ const Pricing: React.FC<PricingProps> = ({ pricing, consistentLayout }) => {
         </h2>
       </div>
 
-      <div className="grid grid-cols-2 max-md:grid-cols-1 gap-4 text-c4-0 xl:px-[96px] lg:px-[64px]">
+      <div className="grid grid-cols-2 max-md:grid-cols-1 gap-4 text-white xl:px-[96px] lg:px-[64px]">
         {pricingTabs.map((pricingTab, idx) => (
           <div
             key={idx}
             className={`
-              border-2 border-c4-0
+              border-2 border-white
               max-md:p-6
               p-8 pt-12
               rounded-lg
               transition-all duration-200
               hover:translate-y-5
               max-md:hover:translate-y-2
-              bg-c1-0
+              bg-primary
               space-y-6 max-md:space-y-3
               flex 
               flex-col
               justify-around
-              ${pricingTab.pricingName === 'Monthly' ? 'invert' : 'bg-c1-0'}
+              ${pricingTab.pricingName === 'Monthly' ? 'invert' : 'bg-primary'}
             `}
           >
             <div className="border-b-2 pb-4 space-y-2 max-md:space-y-1">
@@ -133,7 +133,7 @@ const Pricing: React.FC<PricingProps> = ({ pricing, consistentLayout }) => {
             
             <div>
               <Link href="#contact">
-                <div className="text-center p bg-c4-0 rounded-md p-3 max-md:p-2 text-c2-0 font-dm-mono">
+                <div className="text-center p bg-white rounded-md p-3 max-md:p-2 text-secondary font-dm-mono">
                   Get Started
                 </div>
               </Link>
