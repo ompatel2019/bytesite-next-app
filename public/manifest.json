@@ -1,0 +1,25 @@
+{
+  "name": "Bytesite Digital - AI Marketing & Software Studio Sydney",
+  "short_name": "Bytesite Digital",
+  "description": "Sydney's premier AI Marketing & Software Studio. We create cutting-edge digital solutions and AI-powered marketing campaigns.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo2.webp",
+      "sizes": "192x192",
+      "type": "image/webp"
+    },
+    {
+      "src": "/Bytesite.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ],
+  "categories": ["business", "productivity", "utilities"],
+  "lang": "en-AU",
+  "dir": "ltr"
+}

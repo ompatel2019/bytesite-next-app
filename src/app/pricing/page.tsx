@@ -1,5 +1,4 @@
 import React from 'react';
-import SeoHelmet from '../../components/SeoHelmet';
 import PageTitle from '../../components/PageTitle';
 import Pricing from '../../components/Pricing';
 import Faqs from '../../components/Faqs';
@@ -7,31 +6,46 @@ import CTA from '../../components/CTA';
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Pricing - Affordable Web Design & SEO Plans | Bytesite Digital',
-  description: 'Find budget-friendly plans and transparent pricing for custom websites, SEO, and hosting in Blacktown & throughout Sydney.',
+  title: 'Pricing - AI Marketing & Software Development Sydney | Bytesite Digital',
+  description: 'Transparent pricing for AI marketing campaigns, custom software development, and digital solutions. Competitive rates for Sydney businesses seeking innovative technology solutions.',
+  keywords: [
+    "AI Marketing Pricing Sydney",
+    "Software Development Cost Sydney",
+    "Digital Agency Pricing Sydney",
+    "AI Marketing Plans Sydney",
+    "Custom Software Pricing Sydney",
+    "Web Development Cost Sydney",
+    "Digital Marketing Packages Sydney"
+  ],
+  authors: [{ name: "Bytesite Digital" }],
+  creator: "Bytesite Digital",
+  publisher: "Bytesite Digital",
+  metadataBase: new URL('https://bytesitedigital.com.au'),
   alternates: {
     canonical: 'https://bytesitedigital.com.au/pricing',
+  },
+  openGraph: {
+    title: 'Pricing - AI Marketing & Software Development Sydney | Bytesite Digital',
+    description: 'Transparent pricing for AI marketing campaigns, custom software development, and digital solutions. Competitive rates for Sydney businesses.',
+    url: 'https://bytesitedigital.com.au/pricing',
+    siteName: 'Bytesite Digital',
+    locale: 'en_AU',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Pricing - AI Marketing & Software Development Sydney | Bytesite Digital',
+    description: 'Transparent pricing for AI marketing campaigns, custom software development, and digital solutions. Competitive rates for Sydney businesses.',
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
 export default function PricingPage() {
-  const jsonLdPricing = {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Pricing - Bytesite Digital",
-    "description": "Learn about our affordable pricing for web design, development, and SEO services in Blacktown & the Sydney region.",
-    "url": "https://bytesitedigital.com.au/pricing"
-  };
-
   return (
     <>
-      <SeoHelmet
-        title="Pricing - Bytesite Digital"
-        description="Find budget-friendly plans and transparent pricing for custom websites, SEO, and hosting in Blacktown & throughout Sydney."
-        canonicalUrl="https://bytesitedigital.com.au/pricing"
-        jsonSchema={jsonLdPricing}
-      />
-
       <PageTitle
         pageTitle="Pricing"
         pageRoute="Home / Pricing"

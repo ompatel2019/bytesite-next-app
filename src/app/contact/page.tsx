@@ -1,5 +1,4 @@
 import React from 'react';
-import SeoHelmet from '../../components/SeoHelmet';
 import PageTitle from '../../components/PageTitle';
 import ContactForm from '../../components/ContactForm';
 import Faqs from '../../components/Faqs';
@@ -7,31 +6,45 @@ import CTA from '../../components/CTA';
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Contact Us - Get In Touch | Bytesite Digital',
-  description: 'Ready to start your project? Contact our team of web development experts. We\'re here to discuss your needs and provide a free consultation.',
+  title: 'Contact Us - AI Marketing & Software Studio Sydney | Bytesite Digital',
+  description: 'Ready to transform your business with AI-powered marketing and custom software? Contact our Sydney-based AI Marketing & Software Studio for a free consultation.',
+  keywords: [
+    "Contact AI Marketing Sydney",
+    "Software Studio Contact Sydney",
+    "Digital Agency Contact Sydney",
+    "AI Marketing Consultation Sydney",
+    "Custom Software Quote Sydney",
+    "Web Development Contact Sydney"
+  ],
+  authors: [{ name: "Bytesite Digital" }],
+  creator: "Bytesite Digital",
+  publisher: "Bytesite Digital",
+  metadataBase: new URL('https://bytesitedigital.com.au'),
   alternates: {
     canonical: 'https://bytesitedigital.com.au/contact',
+  },
+  openGraph: {
+    title: 'Contact Us - AI Marketing & Software Studio Sydney | Bytesite Digital',
+    description: 'Ready to transform your business with AI-powered marketing and custom software? Contact our Sydney-based AI Marketing & Software Studio for a free consultation.',
+    url: 'https://bytesitedigital.com.au/contact',
+    siteName: 'Bytesite Digital',
+    locale: 'en_AU',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Contact Us - AI Marketing & Software Studio Sydney | Bytesite Digital',
+    description: 'Ready to transform your business with AI-powered marketing and custom software? Contact our Sydney-based AI Marketing & Software Studio.',
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
 export default function Contact() {
-  const jsonLdContact = {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Contact - Bytesite Digital",
-    "description": "Get in touch with Bytesite Digital for website inquiries and SEO solutions in Blacktown & Sydney region.",
-    "url": "https://bytesitedigital.com.au/contact"
-  };
-
   return (
     <>
-      <SeoHelmet
-        title="Contact Us - Bytesite Digital"
-        description="Reach out to Bytesite Digital for custom web development, SEO, and other digital services in Blacktown & across the Sydney region. Let's make it happen."
-        canonicalUrl="https://bytesitedigital.com.au/contact"
-        jsonSchema={jsonLdContact}
-      />
-
       <PageTitle
         pageTitle="Contact Us"
         pageRoute="Home / Contact"

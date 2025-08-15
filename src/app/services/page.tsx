@@ -1,5 +1,4 @@
 import React from "react";
-import SeoHelmet from "../../components/SeoHelmet";
 import PageTitle from "../../components/PageTitle";
 import Services from "../../components/Services";
 import CTA from "../../components/CTA";
@@ -7,33 +6,49 @@ import Faqs from "../../components/Faqs";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Services - Web Design & Digital Marketing | Bytesite Digital",
-  description:
-    "Discover how our web design, development, and SEO services for Blacktown & Sydney can elevate your online presence.",
+  title: "AI Marketing & Software Services Sydney | Bytesite Digital",
+  description: "Discover our comprehensive AI marketing, custom software development, and digital solutions. Sydney's premier AI Marketing & Software Studio helping businesses grow with cutting-edge technology.",
+  keywords: [
+    "AI Marketing Services Sydney",
+    "Custom Software Development Sydney",
+    "Digital Marketing Sydney",
+    "Web Development Sydney",
+    "AI Solutions Sydney",
+    "Software Studio Sydney",
+    "Digital Agency Services Sydney",
+    "AI Marketing Agency Sydney",
+    "Custom Software Sydney",
+    "Web Design Sydney"
+  ],
+  authors: [{ name: "Bytesite Digital" }],
+  creator: "Bytesite Digital",
+  publisher: "Bytesite Digital",
+  metadataBase: new URL('https://bytesitedigital.com.au'),
   alternates: {
     canonical: "https://bytesitedigital.com.au/services",
+  },
+  openGraph: {
+    title: "AI Marketing & Software Services Sydney | Bytesite Digital",
+    description: "Discover our comprehensive AI marketing, custom software development, and digital solutions. Sydney's premier AI Marketing & Software Studio.",
+    url: "https://bytesitedigital.com.au/services",
+    siteName: "Bytesite Digital",
+    locale: "en_AU",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "AI Marketing & Software Services Sydney | Bytesite Digital",
+    description: "Discover our comprehensive AI marketing, custom software development, and digital solutions. Sydney's premier AI Marketing & Software Studio.",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
 export default function ServicesPage() {
-  const jsonLdServices = {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    name: "Services - Bytesite Digital",
-    description:
-      "Explore our range of web and digital marketing services at Bytesite Digital, serving Blacktown & Sydney region.",
-    url: "https://bytesitedigital.com.au/services",
-  };
-
   return (
     <>
-      <SeoHelmet
-        title="Services - Bytesite Digital"
-        description="Discover how our web design, development, and SEO services for Blacktown & Sydney can elevate your online presence."
-        canonicalUrl="https://bytesitedigital.com.au/services"
-        jsonSchema={jsonLdServices}
-      />
-
       <PageTitle
         pageTitle="Services"
         pageRoute="Home / Services"

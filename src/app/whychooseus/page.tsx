@@ -1,36 +1,50 @@
 import React from 'react';
-import SeoHelmet from '../../components/SeoHelmet';
 import PageTitle from '../../components/PageTitle';
 import WhyChooseUs from '../../components/WhyChooseUs';
 import CTA from '../../components/CTA';
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Why Choose Us - Web Development Excellence | Bytesite Digital',
-  description: 'Discover our advantages for businesses in Blacktown & Sydney: blazing fast speeds, powerful SEO strategies, and top-tier design solutions.',
+  title: 'Why Choose Us - AI Marketing & Software Studio Sydney | Bytesite Digital',
+  description: 'Discover why Sydney businesses choose Bytesite Digital: cutting-edge AI marketing technology, innovative software solutions, and proven results across the Sydney region.',
+  keywords: [
+    "Why Choose AI Marketing Sydney",
+    "Software Studio Benefits Sydney",
+    "Digital Agency Advantages Sydney",
+    "AI Marketing Excellence Sydney",
+    "Custom Software Benefits Sydney",
+    "Digital Agency Sydney",
+    "AI Solutions Sydney"
+  ],
+  authors: [{ name: "Bytesite Digital" }],
+  creator: "Bytesite Digital",
+  publisher: "Bytesite Digital",
+  metadataBase: new URL('https://bytesitedigital.com.au'),
   alternates: {
     canonical: 'https://bytesitedigital.com.au/whychooseus',
+  },
+  openGraph: {
+    title: 'Why Choose Us - AI Marketing & Software Studio Sydney | Bytesite Digital',
+    description: 'Discover why Sydney businesses choose Bytesite Digital: cutting-edge AI marketing technology, innovative software solutions, and proven results.',
+    url: 'https://bytesitedigital.com.au/whychooseus',
+    siteName: 'Bytesite Digital',
+    locale: 'en_AU',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Why Choose Us - AI Marketing & Software Studio Sydney | Bytesite Digital',
+    description: 'Discover why Sydney businesses choose Bytesite Digital: cutting-edge AI marketing technology, innovative software solutions, and proven results.',
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
 export default function WhyChooseUsPage() {
-  const jsonLdWhyChooseUs = {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Why Choose Us - Bytesite Digital",
-    "description": "Learn why Bytesite Digital is the best partner for your online success—speed, SEO, and top-tier design in Blacktown & the Sydney region.",
-    "url": "https://bytesitedigital.com.au/whychooseus"
-  };
-
   return (
     <>
-      <SeoHelmet
-        title="Why Choose Us - Bytesite Digital"
-        description="Discover our advantages for businesses in Blacktown & Sydney: blazing fast speeds, powerful SEO strategies, and top-tier design solutions."
-        canonicalUrl="https://bytesitedigital.com.au/whychooseus"
-        jsonSchema={jsonLdWhyChooseUs}
-      />
-
       <PageTitle
         pageTitle="Why Choose Us"
         pageRoute="Home / Why Choose Us"

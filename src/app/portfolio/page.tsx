@@ -1,5 +1,4 @@
 import React from 'react';
-import SeoHelmet from '../../components/SeoHelmet';
 import PageTitle from '../../components/PageTitle';
 import Portfolio from '../../components/Portfolio';
 import CTA from '../../components/CTA';
@@ -7,31 +6,46 @@ import Faqs from '../../components/Faqs';
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Portfolio - Our Web Development Projects | Bytesite Digital',
-  description: 'Check out our custom web solutions and creative projects for clients in Blacktown and the entire Sydney region.',
+  title: 'Portfolio - AI Marketing & Software Projects Sydney | Bytesite Digital',
+  description: 'Explore our portfolio of AI-powered marketing campaigns, custom software solutions, and digital transformations for businesses across Sydney.',
+  keywords: [
+    "Portfolio AI Marketing Sydney",
+    "Software Projects Sydney",
+    "Digital Agency Portfolio Sydney",
+    "AI Marketing Case Studies Sydney",
+    "Custom Software Examples Sydney",
+    "Web Development Portfolio Sydney",
+    "Digital Marketing Projects Sydney"
+  ],
+  authors: [{ name: "Bytesite Digital" }],
+  creator: "Bytesite Digital",
+  publisher: "Bytesite Digital",
+  metadataBase: new URL('https://bytesitedigital.com.au'),
   alternates: {
     canonical: 'https://bytesitedigital.com.au/portfolio',
+  },
+  openGraph: {
+    title: 'Portfolio - AI Marketing & Software Projects Sydney | Bytesite Digital',
+    description: 'Explore our portfolio of AI-powered marketing campaigns, custom software solutions, and digital transformations for businesses across Sydney.',
+    url: 'https://bytesitedigital.com.au/portfolio',
+    siteName: 'Bytesite Digital',
+    locale: 'en_AU',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Portfolio - AI Marketing & Software Projects Sydney | Bytesite Digital',
+    description: 'Explore our portfolio of AI-powered marketing campaigns, custom software solutions, and digital transformations for businesses across Sydney.',
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
 export default function PortfolioPage() {
-  const jsonLdPortfolio = {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Portfolio - Bytesite Digital",
-    "description": "Explore our past projects and success stories showcasing custom websites, SEO solutions, and design transformations for Blacktown & the Sydney region.",
-    "url": "https://bytesitedigital.com.au/portfolio"
-  };
-
   return (
     <>
-      <SeoHelmet
-        title="Portfolio - Bytesite Digital"
-        description="Check out our custom web solutions and creative projects for clients in Blacktown and the entire Sydney region."
-        canonicalUrl="https://bytesitedigital.com.au/portfolio"
-        jsonSchema={jsonLdPortfolio}
-      />
-
       <PageTitle
         pageTitle="Portfolio"
         pageRoute="Home / Portfolio"
