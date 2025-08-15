@@ -6,8 +6,8 @@ import CTA from '@/components/CTA';
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Pricing - AI Marketing & Software Development Sydney | Bytesite Digital',
-  description: 'Transparent pricing for AI marketing campaigns, custom software development, and digital solutions. Competitive rates for Sydney businesses seeking innovative technology solutions.',
+  title: 'Pricing - Bytesite Digital',
+  description: 'Transparent pricing for AI marketing campaigns, custom software development, and digital solutions.',
   keywords: [
     "AI Marketing Pricing Sydney",
     "Software Development Cost Sydney",
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
     canonical: 'https://bytesitedigital.com.au/pricing',
   },
   openGraph: {
-    title: 'Pricing - AI Marketing & Software Development Sydney | Bytesite Digital',
-    description: 'Transparent pricing for AI marketing campaigns, custom software development, and digital solutions. Competitive rates for Sydney businesses.',
+    title: 'Pricing - Bytesite Digital',
+    description: 'Transparent pricing for AI marketing campaigns, custom software development, and digital solutions.',
     url: 'https://bytesitedigital.com.au/pricing',
     siteName: 'Bytesite Digital',
     locale: 'en_AU',
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'Pricing - AI Marketing & Software Development Sydney | Bytesite Digital',
-    description: 'Transparent pricing for AI marketing campaigns, custom software development, and digital solutions. Competitive rates for Sydney businesses.',
+    title: 'Pricing - Bytesite Digital',
+    description: 'Transparent pricing for AI marketing campaigns, custom software development, and digital solutions.',
   },
   robots: {
     index: true,

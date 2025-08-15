@@ -6,6 +6,7 @@ import { FaPlus } from "react-icons/fa6";
 import { RxCross2 } from "react-icons/rx";
 import { CgMenuMotion } from "react-icons/cg";
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface NavBarLink {
   name: string;
@@ -35,9 +36,16 @@ const Navbar: React.FC<NavbarProps> = ({ hoverBg, navBarLinks }) => {
       >
         {/* Home Link */}
         <Link href="/#home" aria-label="Home">
-          <p className="text-white text-[16px] fade-left fade-in h4 max-md:text-[32px]">
-            Byt.
-          </p>
+          <div className="flex items-center">
+            <Image
+              src="/Bytesite.svg"
+              alt="Bytesite Digital Logo"
+              width={120}
+              height={40}
+              className="h-10 w-auto"
+              priority
+            />
+          </div>
         </Link>
 
         {/* DESKTOP NAV */}

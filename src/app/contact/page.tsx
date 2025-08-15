@@ -7,9 +7,9 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Contact Us - AI Marketing & Software Studio Sydney | Bytesite Digital",
+    "Contact Us - Bytesite Digital",
   description:
-    "Ready to transform your business with AI-powered marketing and custom software? Contact our Sydney-based AI Marketing & Software Studio for a free consultation.",
+    "Get in touch with Bytesite Digital for AI marketing and custom software solutions. Free consultation available.",
   keywords: [
     "Contact AI Marketing Sydney",
     "Software Studio Contact Sydney",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "Contact Us - AI Marketing & Software Studio Sydney | Bytesite Digital",
+      "Contact Us - Bytesite Digital",
     description:
-      "Ready to transform your business with AI-powered marketing and custom software? Contact our Sydney-based AI Marketing & Software Studio for a free consultation.",
+      "Get in touch with Bytesite Digital for AI marketing and custom software solutions. Free consultation available.",
     url: "https://bytesitedigital.com.au/contact",
     siteName: "Bytesite Digital",
     locale: "en_AU",
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary",
     title:
-      "Contact Us - AI Marketing & Software Studio Sydney | Bytesite Digital",
+      "Contact Us - Bytesite Digital",
     description:
-      "Ready to transform your business with AI-powered marketing and custom software? Contact our Sydney-based AI Marketing & Software Studio.",
+      "Get in touch with Bytesite Digital for AI marketing and custom software solutions.",
   },
   robots: {
     index: true,

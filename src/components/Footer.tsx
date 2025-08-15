@@ -160,7 +160,7 @@ const Footer: React.FC<FooterProps> = ({ consistentLayout }) => {
       </div>
 
       <div className="p text-center">
-        © {new Date().getFullYear()} Bytesites Digital. All rights reserved.
+        © {new Date().getFullYear()} Bytesite Digital. All rights reserved.
       </div>
     </section>
   );

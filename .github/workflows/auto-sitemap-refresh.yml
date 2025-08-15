@@ -1,0 +1,49 @@
+name: Auto Sitemap Refresh
+
+on:
+  # Run on schedule (every 24 hours)
+  schedule:
+    - cron: '0 0 * * *'  # Daily at midnight UTC
+  
+  # Run after successful deployments
+  workflow_run:
+    workflows: ["Deploy"]  # Adjust this to match your deployment workflow name
+    types: [completed]
+    branches: [main, master]
+  
+  # Manual trigger
+  workflow_dispatch:
+
+jobs:
+  refresh-sitemap:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Build project
+        run: npm run build
+        
+      - name: Refresh sitemap and ping search engines
+        run: npm run refresh-sitemap
+        
+      - name: Commit and push sitemap updates
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Auto-update sitemap and SEO [skip ci]" && git push)
+          
+      - name: Notify completion
+        run: |
+          echo "✅ Sitemap refresh completed at $(date)"
+          echo "🔗 Sitemap URL: https://bytesitedigital.com.au/sitemap.xml"

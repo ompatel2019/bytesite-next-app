@@ -6,8 +6,8 @@ import Faqs from '@/components/Faqs';
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Portfolio - AI Marketing & Software Projects Sydney | Bytesite Digital',
-  description: 'Explore our portfolio of AI-powered marketing campaigns, custom software solutions, and digital transformations for businesses across Sydney.',
+  title: 'Portfolio - Bytesite Digital',
+  description: 'Explore our portfolio of AI-powered marketing campaigns, custom software solutions, and digital transformations.',
   keywords: [
     "Portfolio AI Marketing Sydney",
     "Software Projects Sydney",
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
     canonical: 'https://bytesitedigital.com.au/portfolio',
   },
   openGraph: {
-    title: 'Portfolio - AI Marketing & Software Projects Sydney | Bytesite Digital',
-    description: 'Explore our portfolio of AI-powered marketing campaigns, custom software solutions, and digital transformations for businesses across Sydney.',
+    title: 'Portfolio - Bytesite Digital',
+    description: 'Explore our portfolio of AI-powered marketing campaigns, custom software solutions, and digital transformations.',
     url: 'https://bytesitedigital.com.au/portfolio',
     siteName: 'Bytesite Digital',
     locale: 'en_AU',
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'Portfolio - AI Marketing & Software Projects Sydney | Bytesite Digital',
-    description: 'Explore our portfolio of AI-powered marketing campaigns, custom software solutions, and digital transformations for businesses across Sydney.',
+    title: 'Portfolio - Bytesite Digital',
+    description: 'Explore our portfolio of AI-powered marketing campaigns, custom software solutions, and digital transformations.',
   },
   robots: {
     index: true,

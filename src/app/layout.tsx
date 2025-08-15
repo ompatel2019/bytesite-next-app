@@ -6,10 +6,10 @@ import { generalSans } from '@/fonts/fonts'
 
 export const metadata: Metadata = {
   title: {
-    default: 'Bytesite Digital - AI Marketing & Software Studio Sydney',
+    default: 'Bytesite Digital - AI Marketing & Software Studio',
     template: '%s | Bytesite Digital'
   },
-  description: 'Sydney\'s premier AI Marketing & Software Studio. We create cutting-edge digital solutions, AI-powered marketing campaigns, and custom software for businesses across Sydney.',
+  description: 'Sydney\'s leading AI Marketing & Software Studio. We create cutting-edge digital solutions and AI-powered marketing campaigns.',
   keywords: [
     'AI Marketing Sydney',
     'Software Studio Sydney',
@@ -50,23 +50,23 @@ export const metadata: Metadata = {
     locale: 'en_AU',
     url: 'https://bytesitedigital.com.au',
     siteName: 'Bytesite Digital',
-    title: 'Bytesite Digital - AI Marketing & Software Studio Sydney',
-    description: 'Sydney\'s premier AI Marketing & Software Studio. We create cutting-edge digital solutions and AI-powered marketing campaigns.',
+    title: 'Bytesite Digital - AI Marketing & Software Studio',
+    description: 'Sydney\'s leading AI Marketing & Software Studio. We create cutting-edge digital solutions and AI-powered marketing campaigns.',
     images: [
       {
-        url: '/heroImage1.webp',
+        url: '/Bytesite.svg',
         width: 1200,
         height: 630,
-        alt: 'Bytesite Digital - AI Marketing & Software Studio Sydney',
-        type: 'image/webp',
+        alt: 'Bytesite Digital - AI Marketing & Software Studio',
+        type: 'image/svg+xml',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Bytesite Digital - AI Marketing & Software Studio Sydney',
-    description: 'Sydney\'s premier AI Marketing & Software Studio. We create cutting-edge digital solutions and AI-powered marketing campaigns.',
-    images: ['/heroImage1.webp'],
+    title: 'Bytesite Digital - AI Marketing & Software Studio',
+    description: 'Sydney\'s leading AI Marketing & Software Studio. We create cutting-edge digital solutions and AI-powered marketing campaigns.',
+    images: ['/Bytesite.svg'],
     site: '@bytesitedigital',
     creator: '@bytesitedigital',
   },
@@ -82,8 +82,13 @@ export const metadata: Metadata = {
         type: 'image/x-icon'
       },
       {
-        url: '/logo2.webp',
+        url: '/Bytesite.svg',
         sizes: '192x192',
+        type: 'image/svg+xml'
+      },
+      {
+        url: '/logo2.webp',
+        sizes: '512x512',
         type: 'image/webp'
       }
     ],

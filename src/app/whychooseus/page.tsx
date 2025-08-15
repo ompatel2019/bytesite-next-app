@@ -5,8 +5,8 @@ import CTA from '@/components/CTA';
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Why Choose Us - AI Marketing & Software Studio Sydney | Bytesite Digital',
-  description: 'Discover why Sydney businesses choose Bytesite Digital: cutting-edge AI marketing technology, innovative software solutions, and proven results across the Sydney region.',
+  title: 'Why Choose Us - Bytesite Digital',
+  description: 'Discover why businesses choose Bytesite Digital: cutting-edge AI marketing technology and innovative software solutions.',
   keywords: [
     "Why Choose AI Marketing Sydney",
     "Software Studio Benefits Sydney",
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
     canonical: 'https://bytesitedigital.com.au/whychooseus',
   },
   openGraph: {
-    title: 'Why Choose Us - AI Marketing & Software Studio Sydney | Bytesite Digital',
-    description: 'Discover why Sydney businesses choose Bytesite Digital: cutting-edge AI marketing technology, innovative software solutions, and proven results.',
+    title: 'Why Choose Us - Bytesite Digital',
+    description: 'Discover why businesses choose Bytesite Digital: cutting-edge AI marketing technology and innovative software solutions.',
     url: 'https://bytesitedigital.com.au/whychooseus',
     siteName: 'Bytesite Digital',
     locale: 'en_AU',
@@ -33,8 +33,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary',
-    title: 'Why Choose Us - AI Marketing & Software Studio Sydney | Bytesite Digital',
-    description: 'Discover why Sydney businesses choose Bytesite Digital: cutting-edge AI marketing technology, innovative software solutions, and proven results.',
+    title: 'Why Choose Us - Bytesite Digital',
+    description: 'Discover why businesses choose Bytesite Digital: cutting-edge AI marketing technology and innovative software solutions.',
   },
   robots: {
     index: true,

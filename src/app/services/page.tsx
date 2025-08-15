@@ -6,8 +6,8 @@ import Faqs from '@/components/Faqs';
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Marketing & Software Services Sydney | Bytesite Digital",
-  description: "Discover our comprehensive AI marketing, custom software development, and digital solutions. Sydney's premier AI Marketing & Software Studio helping businesses grow with cutting-edge technology.",
+  title: "Services - Bytesite Digital",
+  description: "Discover our comprehensive AI marketing, custom software development, and digital solutions.",
   keywords: [
     "AI Marketing Services Sydney",
     "Custom Software Development Sydney",
@@ -28,8 +28,8 @@ export const metadata: Metadata = {
     canonical: "https://bytesitedigital.com.au/services",
   },
   openGraph: {
-    title: "AI Marketing & Software Services Sydney | Bytesite Digital",
-    description: "Discover our comprehensive AI marketing, custom software development, and digital solutions. Sydney's premier AI Marketing & Software Studio.",
+    title: "Services - Bytesite Digital",
+    description: "Discover our comprehensive AI marketing, custom software development, and digital solutions.",
     url: "https://bytesitedigital.com.au/services",
     siteName: "Bytesite Digital",
     locale: "en_AU",
@@ -37,8 +37,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "AI Marketing & Software Services Sydney | Bytesite Digital",
-    description: "Discover our comprehensive AI marketing, custom software development, and digital solutions. Sydney's premier AI Marketing & Software Studio.",
+    title: "Services - Bytesite Digital",
+    description: "Discover our comprehensive AI marketing, custom software development, and digital solutions.",
   },
   robots: {
     index: true,
