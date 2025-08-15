@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Service from './Service';
 import { PiBlueprint } from "react-icons/pi";
 import { MdOutlineDesignServices, MdOutlineReviews, MdAutoGraph } from "react-icons/md";
@@ -25,7 +25,6 @@ interface ServiceInfo {
 interface ServicesProps {
   consistentLayout: ConsistentLayout;
   servicesSection: string;
-  screenWidth: number;
 }
 
 /**
@@ -34,20 +33,10 @@ interface ServicesProps {
  * @param {string} servicesSection - e.g. "Services"
  * @param {number} screenWidth - (Optional) from parent if you want to do custom logic
  */
-const Services: React.FC<ServicesProps> = ({ consistentLayout, servicesSection, screenWidth }) => {
-  // Moved the text logic here or you can keep it external
+    const Services: React.FC<ServicesProps> = ({ consistentLayout, servicesSection }) => {
   const allSubHeading = "We offer an array of services designed to help you effectively expand your brand in the digital realm. Our comprehensive solutions are tailored to enhance your online presence and drive growth.";
-  const mobileSubheading = "We offer services to expand your brand online, enhance your presence, and drive growth.";
 
-  const [subHeading, setSubheading] = useState("");
-
-  useEffect(() => {
-    if ((screenWidth || window.innerWidth) <= 768) {
-      setSubheading(mobileSubheading);
-    } else {
-      setSubheading(allSubHeading);
-    }
-  }, [screenWidth]);
+  const [subHeading] = useState(allSubHeading);
 
   const services: ServiceInfo[] = [
     {

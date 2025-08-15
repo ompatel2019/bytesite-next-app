@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { FaStar } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
@@ -16,7 +16,6 @@ interface ConsistentLayout {
 interface HeroProps {
   hoverBg: string;
   consistentLayout: ConsistentLayout;
-  screenWidth: number;
 }
 
 /**
@@ -24,7 +23,7 @@ interface HeroProps {
  * @param {string} hoverBg - A Tailwind class for the main CTA button hover.
  * @param {number} screenWidth
  */
-const Hero: React.FC<HeroProps> = ({ hoverBg, screenWidth }) => {
+const Hero: React.FC<HeroProps> = ({ hoverBg }) => {
   const allTestimonials = [
     "Their expertise brought my vision to life—highly recommended!",
     "Creative solutions, timely delivery, and excellent attention to detail!",
@@ -33,25 +32,9 @@ const Hero: React.FC<HeroProps> = ({ hoverBg, screenWidth }) => {
 
   const allHeroSubText =
     "Find your place on the internet in under a month! We offer custom designs, domain hosting, SEO services, and more to help you establish a standout online presence quickly and efficiently.";
-  const mobHeroSubText =
-    "Get online fast with our custom designs, domain hosting, and SEO services!";
 
-  const [testimonials, setTestimonials] = useState<string[]>([]);
-  const [heroSubText, setHeroSubText] = useState("");
-
-  useEffect(() => {
-    function handleResizeOrLoad() {
-      if ((screenWidth || window.innerWidth) <= 768) {
-        setTestimonials(allTestimonials.slice(0, 2));
-        setHeroSubText(mobHeroSubText);
-      } else {
-        setTestimonials(allTestimonials);
-        setHeroSubText(allHeroSubText);
-      }
-    }
-
-    handleResizeOrLoad();
-  }, [screenWidth]);
+  const [testimonials] = useState<string[]>(allTestimonials);
+  const [heroSubText] = useState(allHeroSubText);
 
   const heroText = "We Offer Web Solutions";
   const leftButton = "Get Started";
