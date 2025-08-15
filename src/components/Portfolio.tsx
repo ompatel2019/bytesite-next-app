@@ -1,10 +1,10 @@
 import React from 'react';
 import PortfolioItem from './PortfolioItem';
-import icl from '../images/icl.webp';
-import a1ed from '../images/a1education.png';
-import sbp from '../images/sydback.png';
-import rgb from '../images/rgb.webp';
-import isolve from '../images/isolve.webp';
+import icl from '@/images/icl.webp';
+import a1ed from '@/images/a1education.png';
+import sbp from '@/images/sydback.png';
+import rgb from '@/images/rgb.webp';
+import isolve from '@/images/isolve.webp';
 
 interface ConsistentLayout {
   section: string;

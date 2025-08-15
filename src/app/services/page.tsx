@@ -1,8 +1,8 @@
 import React from "react";
-import PageTitle from "../../components/PageTitle";
-import Services from "../../components/Services";
-import CTA from "../../components/CTA";
-import Faqs from "../../components/Faqs";
+import PageTitle from '@/components/PageTitle';
+import Services from '@/components/Services';
+import CTA from '@/components/CTA';
+import Faqs from '@/components/Faqs';
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

@@ -1,12 +1,12 @@
 import React from "react";
-import Hero from "../components/Hero";
-import SlidingText from "../components/SlidingText";
-import Services from "../components/Services";
-import WhyChooseUs from "../components/WhyChooseUs";
-import Portfolio from "../components/Portfolio";
-import Pricing from "../components/Pricing";
-import ContactForm from "../components/ContactForm";
-import Faqs from "../components/Faqs";
+import Hero from "@/components/Hero";
+import SlidingText from "@/components/SlidingText";
+import Services from "@/components/Services";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import Portfolio from "@/components/Portfolio";
+import Pricing from "@/components/Pricing";
+import ContactForm from "@/components/ContactForm";
+import Faqs from "@/components/Faqs";
 import { Metadata } from "next";
 
 const consistentLayout = {

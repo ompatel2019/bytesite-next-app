@@ -1,7 +1,7 @@
 import React from 'react';
-import PageTitle from '../../components/PageTitle';
-import WhyChooseUs from '../../components/WhyChooseUs';
-import CTA from '../../components/CTA';
+import PageTitle from '@/components/PageTitle';
+import WhyChooseUs from '@/components/WhyChooseUs';
+import CTA from '@/components/CTA';
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {

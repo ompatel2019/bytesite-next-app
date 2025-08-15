@@ -1,8 +1,8 @@
 import React from 'react';
-import PageTitle from '../../components/PageTitle';
-import Portfolio from '../../components/Portfolio';
-import CTA from '../../components/CTA';
-import Faqs from '../../components/Faqs';
+import PageTitle from '@/components/PageTitle';
+import Portfolio from '@/components/Portfolio';
+import CTA from '@/components/CTA';
+import Faqs from '@/components/Faqs';
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {

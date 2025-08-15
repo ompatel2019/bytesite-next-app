@@ -5,7 +5,7 @@ import { IoHourglassOutline } from "react-icons/io5";
 import { SlGraph } from "react-icons/sl";
 import { BsLightningCharge } from "react-icons/bs";
 import Image from 'next/image';
-import img from '../images/whyChooseUs.webp'
+import img from '@/images/whyChooseUs.webp'
 
 interface ConsistentLayout {
   section: string;

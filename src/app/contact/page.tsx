@@ -1,40 +1,46 @@
-import React from 'react';
-import PageTitle from '../../components/PageTitle';
-import ContactForm from '../../components/ContactForm';
-import Faqs from '../../components/Faqs';
-import CTA from '../../components/CTA';
-import { Metadata } from 'next'
+import React from "react";
+import PageTitle from "@/components/PageTitle";
+import ContactForm from "@/components/ContactForm";
+import Faqs from "@/components/Faqs";
+import CTA from "@/components/CTA";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Contact Us - AI Marketing & Software Studio Sydney | Bytesite Digital',
-  description: 'Ready to transform your business with AI-powered marketing and custom software? Contact our Sydney-based AI Marketing & Software Studio for a free consultation.',
+  title:
+    "Contact Us - AI Marketing & Software Studio Sydney | Bytesite Digital",
+  description:
+    "Ready to transform your business with AI-powered marketing and custom software? Contact our Sydney-based AI Marketing & Software Studio for a free consultation.",
   keywords: [
     "Contact AI Marketing Sydney",
     "Software Studio Contact Sydney",
     "Digital Agency Contact Sydney",
     "AI Marketing Consultation Sydney",
     "Custom Software Quote Sydney",
-    "Web Development Contact Sydney"
+    "Web Development Contact Sydney",
   ],
   authors: [{ name: "Bytesite Digital" }],
   creator: "Bytesite Digital",
   publisher: "Bytesite Digital",
-  metadataBase: new URL('https://bytesitedigital.com.au'),
+  metadataBase: new URL("https://bytesitedigital.com.au"),
   alternates: {
-    canonical: 'https://bytesitedigital.com.au/contact',
+    canonical: "https://bytesitedigital.com.au/contact",
   },
   openGraph: {
-    title: 'Contact Us - AI Marketing & Software Studio Sydney | Bytesite Digital',
-    description: 'Ready to transform your business with AI-powered marketing and custom software? Contact our Sydney-based AI Marketing & Software Studio for a free consultation.',
-    url: 'https://bytesitedigital.com.au/contact',
-    siteName: 'Bytesite Digital',
-    locale: 'en_AU',
-    type: 'website',
+    title:
+      "Contact Us - AI Marketing & Software Studio Sydney | Bytesite Digital",
+    description:
+      "Ready to transform your business with AI-powered marketing and custom software? Contact our Sydney-based AI Marketing & Software Studio for a free consultation.",
+    url: "https://bytesitedigital.com.au/contact",
+    siteName: "Bytesite Digital",
+    locale: "en_AU",
+    type: "website",
   },
   twitter: {
-    card: 'summary',
-    title: 'Contact Us - AI Marketing & Software Studio Sydney | Bytesite Digital',
-    description: 'Ready to transform your business with AI-powered marketing and custom software? Contact our Sydney-based AI Marketing & Software Studio.',
+    card: "summary",
+    title:
+      "Contact Us - AI Marketing & Software Studio Sydney | Bytesite Digital",
+    description:
+      "Ready to transform your business with AI-powered marketing and custom software? Contact our Sydney-based AI Marketing & Software Studio.",
   },
   robots: {
     index: true,
@@ -57,18 +63,18 @@ export default function Contact() {
       <ContactForm
         contactForm="Get in Touch"
         consistentLayout={{
-          section: 'bg-primary text-white space-y-8 py-16 responsivePad',
-          sectionClass: 'h6 font-semibold',
-          sectionSubheadingClass: 'h4 font-semibold'
+          section: "bg-primary text-white space-y-8 py-16 responsivePad",
+          sectionClass: "h6 font-semibold",
+          sectionSubheadingClass: "h4 font-semibold",
         }}
       />
 
       <Faqs
         faqsSec="FAQs"
         consistentLayout={{
-          section: 'bg-primary text-white space-y-8 py-16 responsivePad',
-          sectionClass: 'h6 font-semibold',
-          sectionSubheadingClass: 'h4 font-semibold'
+          section: "bg-primary text-white space-y-8 py-16 responsivePad",
+          sectionClass: "h6 font-semibold",
+          sectionSubheadingClass: "h4 font-semibold",
         }}
       />
       <CTA />

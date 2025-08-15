@@ -4,8 +4,8 @@ import React, { useState } from "react";
 import { FaStar } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
-import heroImage1 from "../images/heroImage1.webp";
-import heroImage2 from "../images/heroImage2.webp";
+import heroImage1 from "@/images/heroImage1.webp";
+import heroImage2 from "@/images/heroImage2.webp";
 
 interface ConsistentLayout {
   section: string;

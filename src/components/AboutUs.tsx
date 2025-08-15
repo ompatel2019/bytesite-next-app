@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import aboutUsImg from "../images/aboutUs.webp";
+import aboutUsImg from "@/images/aboutUs.webp";
 
 interface ConsistentLayout {
   section: string;

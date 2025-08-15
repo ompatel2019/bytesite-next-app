@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import '../animations.css'
-import MainLayout from '../components/layouts/MainLayout'
-import { generalSans } from '../fonts/fonts'
+import MainLayout from '@/components/layouts/MainLayout'
+import { generalSans } from '@/fonts/fonts'
 
 export const metadata: Metadata = {
   title: {
